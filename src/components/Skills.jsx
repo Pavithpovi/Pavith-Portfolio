@@ -78,7 +78,6 @@ export default function Skills() {
                                     <div key={skillIdx} className="skill-progress-bar">
                                         <div className="skill-info">
                                             <span>{skill.name}</span>
-                                            <span>{skill.level}</span>
                                         </div>
                                         <div className="progress-track">
                                             <div 
