@@ -8,7 +8,13 @@ export default function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Thank you for your message, ${name}! Your email simulation was sent successfully.`);
+        
+        // Construct mailto link to open default email client pre-filled
+        const mailToLink = `mailto:pavithbabuji@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name} (${email})\n\nMessage:\n${message}`)}`;
+        
+        window.location.href = mailToLink;
+        
+        // Reset form fields
         setName('');
         setEmail('');
         setSubject('');
