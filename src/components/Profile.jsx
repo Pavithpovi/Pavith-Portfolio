@@ -20,7 +20,7 @@ export default function Profile() {
                         <div className="personal-info-grid">
                             <div className="info-item">
                                 <span className="info-label">D.O.B</span>
-                                <span class="info-value">29.04.2005</span>
+                                <span className="info-value">29.04.2005</span>
                             </div>
                             <div className="info-item">
                                 <span className="info-label">Location</span>

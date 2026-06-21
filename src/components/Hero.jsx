@@ -48,38 +48,38 @@ export default function Hero() {
     };
 
     return (
-        <section id="hero" class="hero-section">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <span class="hero-welcome">Welcome to my universe</span>
-                    <h1 class="hero-name">PAVITH S</h1>
-                    <div class="hero-subtitle-wrapper">
-                        <span class="hero-subtitle">I'm a </span>
-                        <span id="typewriter" class="typewriter-text">{typedText}</span>
+        <section id="hero" className="hero-section">
+            <div className="container hero-container">
+                <div className="hero-content">
+                    <span className="hero-welcome">Welcome to my universe</span>
+                    <h1 className="hero-name">PAVITH S</h1>
+                    <div className="hero-subtitle-wrapper">
+                        <span className="hero-subtitle">I'm a </span>
+                        <span id="typewriter" className="typewriter-text">{typedText}</span>
                     </div>
-                    <p class="hero-desc">
+                    <p className="hero-desc">
                         Passionate about crafting high-performance, visually striking, and responsive web applications with immersive interactive experiences.
                     </p>
-                    <div class="hero-cta">
-                        <button onClick={() => scrollToSection('projects')} class="btn btn-primary">
-                            View Projects <i class="fa-solid fa-arrow-right"></i>
+                    <div className="hero-cta">
+                        <button onClick={() => scrollToSection('projects')} className="btn btn-primary">
+                            View Projects <i className="fa-solid fa-arrow-right"></i>
                         </button>
-                        <button onClick={() => scrollToSection('contact')} class="btn btn-secondary">
+                        <button onClick={() => scrollToSection('contact')} className="btn btn-secondary">
                             Get In Touch
                         </button>
                     </div>
-                    <div class="hero-socials">
+                    <div className="hero-socials">
                         <a href="https://github.com/Pavithpovi" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <i class="fa-brands fa-github"></i>
+                            <i className="fa-brands fa-github"></i>
                         </a>
                         <a href="https://linkedin.com/in/spavith" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <i class="fa-brands fa-linkedin"></i>
+                            <i className="fa-brands fa-linkedin"></i>
                         </a>
                         <a href="mailto:pavithbabuji@gmail.com" aria-label="Email">
-                            <i class="fa-solid fa-envelope"></i>
+                            <i className="fa-solid fa-envelope"></i>
                         </a>
                         <a href="tel:+919345321695" aria-label="Phone">
-                            <i class="fa-solid fa-phone"></i>
+                            <i className="fa-solid fa-phone"></i>
                         </a>
                     </div>
                 </div>
@@ -92,11 +92,11 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <span class="mouse-icon">
-                    <span class="wheel"></span>
+            <div className="scroll-indicator">
+                <span className="mouse-icon">
+                    <span className="wheel"></span>
                 </span>
-                <span class="scroll-text">Scroll Down</span>
+                <span className="scroll-text">Scroll Down</span>
             </div>
         </section>
     );
