@@ -1,6 +1,18 @@
 import { useEffect } from 'react';
 
 const projectDetails = {
+    nature_love: {
+        title: "Rexopro Nature Love",
+        tags: "React.js • CSS Modules • Vercel Deployment • Environmental Catalog",
+        date: "Completed In: 2026",
+        desc: "An immersive, digital catalog showcasing environmental beauties and forestry conservation efforts, bringing a luxury nature-centered web concept to life.",
+        highlights: [
+            "Presents a premium interface designed with deep blacks, slate greys, and custom forest accents.",
+            "Implements fluid scrolling layouts and interactive, glowing HSL color highlights.",
+            "Hosted and deployed on Vercel for maximum performance and instant response metrics.",
+            "Focuses on providing users with deep environmental appreciation through visual luxury assets."
+        ]
+    },
     animal_world: {
         title: "Rexopro Animal World",
         tags: "React.js • Tailwind CSS • Vercel Deployment • 3D Animal Catalog",

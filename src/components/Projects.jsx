@@ -3,8 +3,19 @@ import imgMicrogrid from '../assets/proj_microgrid.png';
 import imgFitness from '../assets/proj_fitness.png';
 import imgEvents from '../assets/proj_events.png';
 import imgAnimalWorld from '../assets/proj_animal_world.png';
+import imgNatureLove from '../assets/proj_nature_love.png';
 
 const projects = [
+    {
+        id: "nature_love",
+        year: "2026",
+        icon: "fa-solid fa-heart project-icon-type text-neon-pink",
+        title: "Rexopro Nature Love",
+        shortDesc: "An immersive digital catalog showcasing environmental beauties and forestry conservation efforts.",
+        tags: ["React", "Tailwind CSS", "Vercel"],
+        img: imgNatureLove,
+        liveUrl: "https://rexopro-nature-love.vercel.app/"
+    },
     {
         id: "animal_world",
         year: "2026",
