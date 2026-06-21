@@ -2,8 +2,19 @@ import React from 'react';
 import imgMicrogrid from '../assets/proj_microgrid.png';
 import imgFitness from '../assets/proj_fitness.png';
 import imgEvents from '../assets/proj_events.png';
+import imgAnimalWorld from '../assets/proj_animal_world.png';
 
 const projects = [
+    {
+        id: "animal_world",
+        year: "2026",
+        icon: "fa-solid fa-leaf project-icon-type text-neon-green",
+        title: "Rexopro Animal World",
+        shortDesc: "An immersive digital book catalog showing wild animals in a moody, atmospheric, and forest estate style.",
+        tags: ["React", "Tailwind CSS", "Vercel"],
+        img: imgAnimalWorld,
+        liveUrl: "https://rexopro-animal-book-world.vercel.app/"
+    },
     {
         id: "microgrid",
         year: "2026",
@@ -94,15 +105,29 @@ export default function Projects({ onOpenModal }) {
                                         <span key={idx}>{tag}</span>
                                     ))}
                                 </div>
-                                <button 
-                                    className="btn btn-card-link"
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        onOpenModal(proj.id);
-                                    }}
-                                >
-                                    Read Deep-Dive <i className="fa-solid fa-angle-right"></i>
-                                </button>
+                                <div className="project-actions" style={{ display: 'flex', gap: '20px' }}>
+                                    <button 
+                                        className="btn btn-card-link"
+                                        onClick={(e) => {
+                                            e.stopPropagation();
+                                            onOpenModal(proj.id);
+                                        }}
+                                    >
+                                        Read Deep-Dive <i className="fa-solid fa-angle-right"></i>
+                                    </button>
+                                    {proj.liveUrl && (
+                                        <a 
+                                            href={proj.liveUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="btn btn-card-link"
+                                            onClick={(e) => e.stopPropagation()}
+                                            style={{ color: 'var(--neon-teal)' }}
+                                        >
+                                            Visit Live <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.8rem' }}></i>
+                                        </a>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     ))}

@@ -1,6 +1,18 @@
 import { useEffect } from 'react';
 
 const projectDetails = {
+    animal_world: {
+        title: "Rexopro Animal World",
+        tags: "React.js • Tailwind CSS • Vercel Deployment • 3D Animal Catalog",
+        date: "Completed In: 2026",
+        desc: "An immersive digital book catalog showing wild animals in a moody, atmospheric, and forest estate style, bringing interactive luxury aesthetics to educational brand concepts.",
+        highlights: [
+            "Presents an ultra-minimalist, dark luxury web interface focused on animal biodiversity showcases.",
+            "Implements fluid scrolling animations and subtle 3D hover effects for visual immersion.",
+            "Deployed and hosted on Vercel for high performance and fast load times.",
+            "Integrates custom image grids and descriptions matching the Rexopro luxury forest aesthetic."
+        ]
+    },
     microgrid: {
         title: "Self-Learning Microgrid Energy Optimization",
         tags: "Machine Learning • Python • Sci-kit Learn • Energy Optimization",
