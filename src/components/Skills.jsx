@@ -25,6 +25,7 @@ export default function Skills() {
             icon: "fa-solid fa-code text-neon-blue",
             skills: [
                 { name: "Python", level: "85%" },
+                { name: "Java", level: "80%" },
                 { name: "SQL", level: "80%" },
                 { name: "HTML / CSS", level: "95%" }
             ]
