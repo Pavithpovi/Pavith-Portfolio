@@ -10,6 +10,8 @@ import Publications from './components/Publications';
 import Contact from './components/Contact';
 import Modal from './components/Modal';
 import Rexopro from './components/Rexopro';
+import BioluminescentButterflies from './components/BioluminescentButterflies';
+import MistyDeer from './components/MistyDeer';
 
 export default function App() {
     const [selectedProject, setSelectedProject] = useState(null);
@@ -49,6 +51,12 @@ export default function App() {
         <>
             {/* 3D WebGL Background Particle Canvas & Image */}
             <ThreeBackground />
+
+            {/* Misty Background Deer Silhouette */}
+            <MistyDeer />
+
+            {/* Floating Bioluminescent Butterflies */}
+            <BioluminescentButterflies />
 
             {/* Navigation Bar */}
             <Navbar />
