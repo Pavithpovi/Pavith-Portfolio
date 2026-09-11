@@ -1,6 +1,18 @@
 import { useEffect } from 'react';
 
 const projectDetails = {
+    salesforce: {
+        title: "Salesforce Cloud CRM Global Certification Project",
+        tags: "Salesforce • CRM Architecture • Cloud Workflows • Apex & Lightning",
+        date: "Completed In: 2025",
+        desc: "Engineered an end-to-end cloud CRM architecture and management system as part of a global certification specialization. Designed custom data models, automated business process workflows, and role-based access security for enterprise customer lifecycle operations.",
+        highlights: [
+            "Constructed relational data schemas, custom objects, validation rules, and page layouts tailored to CRM business logic.",
+            "Automated multi-tier lead management, case escalations, and notification triggers using Salesforce Flow and process automation.",
+            "Configured robust security hierarchies including Organization-Wide Defaults (OWD), sharing rules, permission sets, and field-level security.",
+            "Generated dynamic analytics dashboards, real-time KPI pipeline reports, and customer journey monitoring metrics."
+        ]
+    },
     nature_love: {
         title: "Rexopro Nature Love",
         tags: "React.js • CSS Modules • Vercel Deployment • Environmental Catalog",

@@ -1,7 +1,12 @@
 export default function Publications() {
     const certificates = [
         {
-            icon: "fa-solid fa-certificate text-neon-blue",
+            icon: "fa-brands fa-salesforce text-neon-blue",
+            title: "Salesforce Global Certification",
+            desc: "Global credential and project specialization in Salesforce CRM architecture, cloud development, automation workflows, and platform customization."
+        },
+        {
+            icon: "fa-solid fa-certificate text-neon-teal",
             title: "Oracle Certified \"Generative AI\"",
             desc: "Advanced credential covering Generative model concepts, Prompting, and LLMs."
         },

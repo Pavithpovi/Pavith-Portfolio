@@ -4,8 +4,18 @@ import imgFitness from '../assets/proj_fitness.png';
 import imgEvents from '../assets/proj_events.png';
 import imgAnimalWorld from '../assets/proj_animal_world.png';
 import imgNatureLove from '../assets/proj_nature_love.png';
+import imgSalesforce from '../assets/proj_salesforce.jpg';
 
 const projects = [
+    {
+        id: "salesforce",
+        year: "2025",
+        icon: "fa-brands fa-salesforce project-icon-type text-neon-blue",
+        title: "Salesforce Cloud CRM Global Certification Project",
+        shortDesc: "Comprehensive Salesforce CRM project implementation featuring automated workflows, custom Lightning data flows, and enterprise cloud architecture.",
+        tags: ["Salesforce", "CRM", "Cloud Architecture", "Global Certification"],
+        img: imgSalesforce
+    },
     {
         id: "nature_love",
         year: "2026",

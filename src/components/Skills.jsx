@@ -52,6 +52,7 @@ export default function Skills() {
             title: "Tools & Systems",
             icon: "fa-solid fa-toolbox text-neon-green",
             skills: [
+                { name: "Salesforce (CRM / Cloud)", level: "85%" },
                 { name: "Git / GitHub", level: "85%" },
                 { name: "DevOps Principles", level: "70%" },
                 { name: "Database Systems (DBMS)", level: "80%" }
