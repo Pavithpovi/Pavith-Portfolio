@@ -2,15 +2,19 @@ import { useEffect } from 'react';
 
 const projectDetails = {
     salesforce: {
-        title: "Salesforce Cloud CRM Global Certification Project",
-        tags: "Salesforce • CRM Architecture • Cloud Workflows • Apex & Lightning",
-        date: "Completed In: 2025",
-        desc: "Engineered an end-to-end cloud CRM architecture and management system as part of a global certification specialization. Designed custom data models, automated business process workflows, and role-based access security for enterprise customer lifecycle operations.",
+        title: "Salesforce Administrator (Admin) Certification Project",
+        tags: "Salesforce Admin • Mentorcrew • Credential ID: JIDP7UD10Z8CG",
+        date: "Completed In: Sep 2026",
+        desc: "Awarded Certificate of Completion by Mentorcrew for successfully completing the comprehensive professional training and project program in SALESFORCE ADMINISTRATOR (ADMIN). Conducted from July 31, 2026 to August 16, 2026 (Issued Sep 01, 2026). Demonstrates end-to-end expertise in CRM architecture, security configuration, user management, custom object creation, and automated business workflows.",
+        certUrl: "https://lnd.mentorcrew.co/credential-validation",
+        credentialId: "JIDP7UD10Z8CG",
         highlights: [
+            "Completed comprehensive professional training in Salesforce Administrator (Admin) program by Mentorcrew.",
+            "Credential ID: JIDP7UD10Z8CG verifiable online via Mentorcrew Credential Validation portal.",
             "Constructed relational data schemas, custom objects, validation rules, and page layouts tailored to CRM business logic.",
-            "Automated multi-tier lead management, case escalations, and notification triggers using Salesforce Flow and process automation.",
-            "Configured robust security hierarchies including Organization-Wide Defaults (OWD), sharing rules, permission sets, and field-level security.",
-            "Generated dynamic analytics dashboards, real-time KPI pipeline reports, and customer journey monitoring metrics."
+            "Configured Organization-Wide Defaults (OWD), Role Hierarchies, Sharing Rules, Profiles, and Permission Sets for multi-tiered user access control.",
+            "Automated core business workflows including lead-to-opportunity pipelines and case escalations using Salesforce Flow.",
+            "Built interactive reports and executive dashboards for real-time monitoring of customer lifecycle and key pipeline metrics."
         ]
     },
     nature_love: {
@@ -123,6 +127,19 @@ export default function Modal({ isOpen, projectKey, onClose }) {
                             ))}
                         </ul>
                     </div>
+                    {data.certUrl && (
+                        <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
+                            <a 
+                                href={data.certUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-primary"
+                                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 20px', borderRadius: '8px', textDecoration: 'none' }}
+                            >
+                                <i className="fa-solid fa-certificate"></i> Assess & Verify Certificate (ID: {data.credentialId || 'Validation'}) <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.8rem' }}></i>
+                            </a>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

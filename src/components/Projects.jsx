@@ -9,12 +9,14 @@ import imgSalesforce from '../assets/proj_salesforce.jpg';
 const projects = [
     {
         id: "salesforce",
-        year: "2025",
+        year: "2026",
         icon: "fa-brands fa-salesforce project-icon-type text-neon-blue",
-        title: "Salesforce Cloud CRM Global Certification Project",
-        shortDesc: "Comprehensive Salesforce CRM project implementation featuring automated workflows, custom Lightning data flows, and enterprise cloud architecture.",
-        tags: ["Salesforce", "CRM", "Cloud Architecture", "Global Certification"],
-        img: imgSalesforce
+        title: "Salesforce Administrator (Admin) Certification Project",
+        shortDesc: "Awarded Certificate of Completion by Mentorcrew. Comprehensive professional training and project covering CRM architecture, security configuration, user management, and automated workflow pipelines.",
+        tags: ["Salesforce Admin", "Mentorcrew", "ID: JIDP7UD10Z8CG", "CRM"],
+        img: imgSalesforce,
+        liveUrl: "https://lnd.mentorcrew.co/credential-validation",
+        liveText: "Assess Certificate"
     },
     {
         id: "nature_love",
@@ -145,7 +147,7 @@ export default function Projects({ onOpenModal }) {
                                             onClick={(e) => e.stopPropagation()}
                                             style={{ color: 'var(--neon-teal)' }}
                                         >
-                                            Visit Live <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.8rem' }}></i>
+                                            {proj.liveText || "Visit Live"} <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.8rem' }}></i>
                                         </a>
                                     )}
                                 </div>

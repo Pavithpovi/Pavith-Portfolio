@@ -2,8 +2,9 @@ export default function Publications() {
     const certificates = [
         {
             icon: "fa-brands fa-salesforce text-neon-blue",
-            title: "Salesforce Global Certification",
-            desc: "Global credential and project specialization in Salesforce CRM architecture, cloud development, automation workflows, and platform customization."
+            title: "Salesforce Administrator (Admin) - Mentorcrew",
+            desc: "Completed comprehensive professional training program in Salesforce Administration, CRM architecture, user security, and automation. Credential ID: JIDP7UD10Z8CG (Issued Sep 01, 2026).",
+            verifyUrl: "https://lnd.mentorcrew.co/credential-validation"
         },
         {
             icon: "fa-solid fa-certificate text-neon-teal",
@@ -89,7 +90,20 @@ export default function Publications() {
                                 <li key={idx}>
                                     <div className="cert-icon"><i className={cert.icon}></i></div>
                                     <div className="cert-details">
-                                        <h4>{cert.title}</h4>
+                                        <h4>
+                                            {cert.title}
+                                            {cert.verifyUrl && (
+                                                <a 
+                                                    href={cert.verifyUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="cert-verify-link"
+                                                    style={{ marginLeft: '10px', fontSize: '0.8rem', color: 'var(--neon-teal)', textDecoration: 'none' }}
+                                                >
+                                                    [Assess / Verify <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.7rem' }}></i>]
+                                                </a>
+                                            )}
+                                        </h4>
                                         <p>{cert.desc}</p>
                                     </div>
                                 </li>
