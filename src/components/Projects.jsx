@@ -13,10 +13,11 @@ const projects = [
         icon: "fa-brands fa-salesforce project-icon-type text-neon-blue",
         title: "Salesforce Administrator (Admin) Certification Project",
         shortDesc: "Awarded Certificate of Completion by Mentorcrew. Comprehensive professional training and project covering CRM architecture, security configuration, user management, and automated workflow pipelines.",
-        tags: ["Salesforce Admin", "Mentorcrew", "ID: JIDP7UD10Z8CG", "CRM"],
+        tags: ["Salesforce Admin", "Mentorcrew", "ID: JIDP7UD10Z8CG", "Trailhead Badges"],
         img: imgSalesforce,
         liveUrl: "https://lnd.mentorcrew.co/credential-validation?credentialId=JIDP7UD10Z8CG",
-        liveText: "Assess Certificate"
+        liveText: "Assess Certificate",
+        trailheadUrl: "https://www.salesforce.com/trailblazer/w2m9e3m5r5u4rfjz3q"
     },
     {
         id: "nature_love",
@@ -148,6 +149,18 @@ export default function Projects({ onOpenModal }) {
                                             style={{ color: 'var(--neon-teal)' }}
                                         >
                                             {proj.liveText || "Visit Live"} <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.8rem' }}></i>
+                                        </a>
+                                    )}
+                                    {proj.trailheadUrl && (
+                                        <a 
+                                            href={proj.trailheadUrl} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer" 
+                                            className="btn btn-card-link"
+                                            onClick={(e) => e.stopPropagation()}
+                                            style={{ color: 'var(--neon-blue)' }}
+                                        >
+                                            Trailhead Badges <i className="fa-solid fa-award" style={{ fontSize: '0.85rem' }}></i>
                                         </a>
                                     )}
                                 </div>

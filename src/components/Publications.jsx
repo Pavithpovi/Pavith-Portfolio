@@ -4,7 +4,8 @@ export default function Publications() {
             icon: "fa-brands fa-salesforce text-neon-blue",
             title: "Salesforce Administrator (Admin) - Mentorcrew",
             desc: "Completed comprehensive professional training program in Salesforce Administration, CRM architecture, user security, and automation. Credential ID: JIDP7UD10Z8CG (Issued Sep 01, 2026).",
-            verifyUrl: "https://lnd.mentorcrew.co/credential-validation?credentialId=JIDP7UD10Z8CG"
+            verifyUrl: "https://lnd.mentorcrew.co/credential-validation?credentialId=JIDP7UD10Z8CG",
+            trailheadUrl: "https://www.salesforce.com/trailblazer/w2m9e3m5r5u4rfjz3q"
         },
         {
             icon: "fa-solid fa-certificate text-neon-teal",
@@ -101,6 +102,17 @@ export default function Publications() {
                                                     style={{ marginLeft: '10px', fontSize: '0.8rem', color: 'var(--neon-teal)', textDecoration: 'none' }}
                                                 >
                                                     [Assess / Verify <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.7rem' }}></i>]
+                                                </a>
+                                            )}
+                                            {cert.trailheadUrl && (
+                                                <a 
+                                                    href={cert.trailheadUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="cert-trailhead-link"
+                                                    style={{ marginLeft: '8px', fontSize: '0.8rem', color: 'var(--neon-blue)', textDecoration: 'none' }}
+                                                >
+                                                    [Trailhead Badges <i className="fa-solid fa-award" style={{ fontSize: '0.75rem' }}></i>]
                                                 </a>
                                             )}
                                         </h4>

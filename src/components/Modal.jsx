@@ -8,9 +8,11 @@ const projectDetails = {
         desc: "Awarded Certificate of Completion by Mentorcrew for successfully completing the comprehensive professional training and project program in SALESFORCE ADMINISTRATOR (ADMIN). Conducted from July 31, 2026 to August 16, 2026 (Issued Sep 01, 2026). Demonstrates end-to-end expertise in CRM architecture, security configuration, user management, custom object creation, and automated business workflows.",
         certUrl: "https://lnd.mentorcrew.co/credential-validation?credentialId=JIDP7UD10Z8CG",
         credentialId: "JIDP7UD10Z8CG",
+        trailheadUrl: "https://www.salesforce.com/trailblazer/w2m9e3m5r5u4rfjz3q",
         highlights: [
             "Completed comprehensive professional training in Salesforce Administrator (Admin) program by Mentorcrew.",
             "Credential ID: JIDP7UD10Z8CG verifiable online via Mentorcrew Credential Validation portal.",
+            "Active Trailhead Trailblazer profile with hands-on badges across Salesforce administration, security, and data architecture.",
             "Constructed relational data schemas, custom objects, validation rules, and page layouts tailored to CRM business logic.",
             "Configured Organization-Wide Defaults (OWD), Role Hierarchies, Sharing Rules, Profiles, and Permission Sets for multi-tiered user access control.",
             "Automated core business workflows including lead-to-opportunity pipelines and case escalations using Salesforce Flow.",
@@ -127,17 +129,30 @@ export default function Modal({ isOpen, projectKey, onClose }) {
                             ))}
                         </ul>
                     </div>
-                    {data.certUrl && (
-                        <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid rgba(255, 255, 255, 0.08)' }}>
-                            <a 
-                                href={data.certUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-primary"
-                                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 20px', borderRadius: '8px', textDecoration: 'none' }}
-                            >
-                                <i className="fa-solid fa-certificate"></i> Assess & Verify Certificate (ID: {data.credentialId || 'Validation'}) <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.8rem' }}></i>
-                            </a>
+                    {(data.certUrl || data.trailheadUrl) && (
+                        <div style={{ marginTop: '24px', paddingTop: '16px', borderTop: '1px solid rgba(255, 255, 255, 0.08)', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                            {data.certUrl && (
+                                <a 
+                                    href={data.certUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-primary"
+                                    style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 18px', borderRadius: '8px', textDecoration: 'none' }}
+                                >
+                                    <i className="fa-solid fa-certificate"></i> Assess Certificate (ID: {data.credentialId || 'Validation'}) <i className="fa-solid fa-arrow-up-right-from-square" style={{ fontSize: '0.8rem' }}></i>
+                                </a>
+                            )}
+                            {data.trailheadUrl && (
+                                <a 
+                                    href={data.trailheadUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-secondary"
+                                    style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 18px', borderRadius: '8px', textDecoration: 'none', background: 'rgba(0, 161, 224, 0.15)', borderColor: 'var(--neon-blue)', color: '#fff' }}
+                                >
+                                    <i className="fa-brands fa-salesforce"></i> View Trailhead Badges <i className="fa-solid fa-award" style={{ fontSize: '0.85rem' }}></i>
+                                </a>
+                            )}
                         </div>
                     )}
                 </div>
