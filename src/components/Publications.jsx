@@ -4,7 +4,7 @@ export default function Publications() {
             icon: "fa-brands fa-salesforce text-neon-blue",
             title: "Salesforce Administrator (Admin) - Mentorcrew",
             desc: "Completed comprehensive professional training program in Salesforce Administration, CRM architecture, user security, and automation. Credential ID: JIDP7UD10Z8CG (Issued Sep 01, 2026).",
-            verifyUrl: "https://lnd.mentorcrew.co/credential-validation"
+            verifyUrl: "https://lnd.mentorcrew.co/credential-validation?credentialId=JIDP7UD10Z8CG"
         },
         {
             icon: "fa-solid fa-certificate text-neon-teal",

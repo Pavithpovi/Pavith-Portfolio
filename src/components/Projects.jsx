@@ -15,7 +15,7 @@ const projects = [
         shortDesc: "Awarded Certificate of Completion by Mentorcrew. Comprehensive professional training and project covering CRM architecture, security configuration, user management, and automated workflow pipelines.",
         tags: ["Salesforce Admin", "Mentorcrew", "ID: JIDP7UD10Z8CG", "CRM"],
         img: imgSalesforce,
-        liveUrl: "https://lnd.mentorcrew.co/credential-validation",
+        liveUrl: "https://lnd.mentorcrew.co/credential-validation?credentialId=JIDP7UD10Z8CG",
         liveText: "Assess Certificate"
     },
     {

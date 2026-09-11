@@ -6,7 +6,7 @@ const projectDetails = {
         tags: "Salesforce Admin • Mentorcrew • Credential ID: JIDP7UD10Z8CG",
         date: "Completed In: Sep 2026",
         desc: "Awarded Certificate of Completion by Mentorcrew for successfully completing the comprehensive professional training and project program in SALESFORCE ADMINISTRATOR (ADMIN). Conducted from July 31, 2026 to August 16, 2026 (Issued Sep 01, 2026). Demonstrates end-to-end expertise in CRM architecture, security configuration, user management, custom object creation, and automated business workflows.",
-        certUrl: "https://lnd.mentorcrew.co/credential-validation",
+        certUrl: "https://lnd.mentorcrew.co/credential-validation?credentialId=JIDP7UD10Z8CG",
         credentialId: "JIDP7UD10Z8CG",
         highlights: [
             "Completed comprehensive professional training in Salesforce Administrator (Admin) program by Mentorcrew.",
